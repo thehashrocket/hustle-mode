@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hustle_mode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="darkBlueBG" translatesAutoresizingMaskIntoConstraints="NO" id="Zag-Fb-7Gk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jC-uK-lA5">
+                                <rect key="frame" x="139" y="285" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="pkc-di-Vpc"/>
+                                    <constraint firstAttribute="height" constant="96" id="yTQ-vF-rhR"/>
+                                </constraints>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <action selector="powerBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qmP-6T-u4P"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rps-Ji-TUN">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudsAndOrangeOval" translatesAutoresizingMaskIntoConstraints="NO" id="aJi-mG-PDp">
+                                        <rect key="frame" x="0.0" y="385" width="375" height="282"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="IVp-t3-tue"/>
+                                            <constraint firstAttribute="height" constant="282" id="Jk1-7d-Um7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hustle Mode:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-wC-3P2">
+                                        <rect key="frame" x="107" y="453" width="160" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEo-Og-VUV">
+                                        <rect key="frame" x="107" y="514" width="160" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="37"/>
+                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rocketAndStream" translatesAutoresizingMaskIntoConstraints="NO" id="LLL-7u-tdJ">
+                                        <rect key="frame" x="-29" y="652" width="462" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.29411764705882354" green="0.46274509803921571" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aJi-mG-PDp" firstAttribute="leading" secondItem="Rps-Ji-TUN" secondAttribute="leading" id="LWZ-oZ-qo1"/>
+                                    <constraint firstAttribute="bottom" secondItem="aJi-mG-PDp" secondAttribute="bottom" id="mb2-Cr-UmI"/>
+                                    <constraint firstAttribute="trailing" secondItem="aJi-mG-PDp" secondAttribute="trailing" id="sac-6w-QM7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zag-Fb-7Gk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2bq-OT-h4s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5jC-uK-lA5" secondAttribute="trailing" constant="140" id="B5f-mY-eMN"/>
+                            <constraint firstItem="Zag-Fb-7Gk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DBg-ER-BW2"/>
+                            <constraint firstItem="5jC-uK-lA5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="Fx1-Ks-kz3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5jC-uK-lA5" secondAttribute="bottom" constant="286" id="KXN-fg-cvI"/>
+                            <constraint firstItem="Rps-Ji-TUN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cYX-2H-13i"/>
+                            <constraint firstItem="Zag-Fb-7Gk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hfA-eY-le3"/>
+                            <constraint firstItem="5jC-uK-lA5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="265" id="j2K-Ff-ZmP"/>
+                            <constraint firstItem="Rps-Ji-TUN" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="kSI-Pd-CjH"/>
+                            <constraint firstItem="Zag-Fb-7Gk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ory-Hf-Zkl"/>
+                            <constraint firstItem="Rps-Ji-TUN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="sHl-Pf-urw"/>
+                            <constraint firstItem="Rps-Ji-TUN" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wyg-SR-7DB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="cloudHolder" destination="Rps-Ji-TUN" id="Ea1-Sw-lO6"/>
+                        <outlet property="darkBlueBG" destination="Zag-Fb-7Gk" id="kmV-IV-Z3l"/>
+                        <outlet property="hustleLbl" destination="aXL-wC-3P2" id="OD4-xs-aW7"/>
+                        <outlet property="onLbl" destination="JEo-Og-VUV" id="4OH-4O-FhD"/>
+                        <outlet property="powerBtn" destination="5jC-uK-lA5" id="fqM-22-RSu"/>
+                        <outlet property="rocket" destination="LLL-7u-tdJ" id="Dxb-hk-gZB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudsAndOrangeOval" width="414" height="477"/>
+        <image name="darkBlueBG" width="414" height="736"/>
+        <image name="powerButton" width="96" height="96"/>
+        <image name="rocketAndStream" width="414" height="672"/>
+    </resources>
+</document>
